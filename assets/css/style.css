@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER Component */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: black;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  margin: 2px;
+}
+
+#header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 50%;
+  padding: 2px;
+  list-style-type: none;
+}
+
+/* MAIN */
+#hero {
+  background-image: url("../images/hero-mobile.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  height: 40vh;
+}
+
+.ds-logo {
+  margin: auto;
+  width: 100vw;
+}
+
+#ds-logo-img {
+  display: block;
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thumbnail {
+  width: 100px;
+}
+
+.ds-font {
+  font-family: "Imbue", serif;
+  color: red;
+  font-size: 40px;
+}
+
+/* ABOUT section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+.about-text {
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.about-photo {
+  background-color: black;
+  margin: auto;
+}
+
+/* Gallery Sectionff */
+
+li {
+  list-style-type: none;
+}
+
+#gallery {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.photo {
+  width: 80%;
+}
+
+/* Contact Section */
+#Contact {
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #hero {
+    background-image: url("../images/hero-768.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-color: black;
+  }
+
+  #about {
+    background-color: black;
+    color: white;
+  }
+
+  #gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .photo {
+    width: 20%;
+    margin: 1px;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  header {
+    background-color: transparent;
+    background-image: url("../images/hero-lg.jpg");
+    background-position: top;
+  }
+
+  .ds-logo {
+    width: 10vw;
+  }
+
+  #hero {
+    background-image: url("../images/hero-lg.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    margin-top: -112px;
+  }
+
+  .photo {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 2880px) {
+}
